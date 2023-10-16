@@ -1,0 +1,212 @@
+
+:root {
+    --brand-color: rgba(77, 90, 229, 1);;
+    --text-main: rgba(46, 47, 66, 1);   
+    --text-address: rgba(67, 68, 85, 1);
+    --color-change: rgba(64, 75, 191, 1);
+    --bgcolor-all: rgba(255, 255, 255, 1);
+    --bgimg: rgba(231, 233, 252, 1);
+    --bgteam: rgba(244, 244, 253, 1);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    color: var(--text-address);
+    background-color: var(--bgcolor-all);
+}
+
+.logo {
+    margin: 25.5px 36px 25.5px 0;
+    color: var(--IRIS, #4D5AE5);
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+.logo-studio {
+    color: var(--text-main);
+}
+.logo-studio:hover {
+    color: var(--color-change);
+}
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.menu-page {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+.menu li .menu-page:hover,
+.menu li .menu-page:focus {
+    color: var(--color-change);
+}
+
+.contact {
+    font-style: normal
+}
+
+.contact-info-mt {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-address)
+}
+
+.contact .contact-info li .contact-info-mt:hover,
+.contact .contact-info li .contact-info-mt:focus {
+    color: var(--color-change);
+}
+
+.black {
+    background-color: var(--text-main);
+}
+.black-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    text-align: center;
+    color: var(--bgcolor-all);
+}
+
+.black-btn {
+    margin: 48px 635px 188px 636px;
+    cursor: pointer;
+    background-color: var(--brand-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--bgcolor-all);
+}
+.black-btn:hover,
+.black-btn:focus {
+    background-color: var(--color-change);
+}
+
+.presentation-title {
+    text-align: center;
+}
+
+.presentation-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-main);
+}
+.presentation-text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    color: var(--text-address);
+}
+
+.working-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--text-main);
+}
+
+.team {
+    background-color: var(--bgteam);
+}
+.team-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--text-main);
+}
+
+.team-cards-company {
+    background-color: var(--bgcolor-all);
+}
+.team-name {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-main);
+}
+.team-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    color: var(--text-address);
+}
+
+.ftr {
+    background-color: var(--text-main);
+}
+.ftr-logo {
+    color: var(--IRIS, #4D5AE5);
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.ftr-logo-studio {
+    color: var(--bgteam);
+}
+.ftr-logo-studio:hover {
+    color: var(--color-change);
+}
+.ftr-text {
+    font-size: 16px;
+    line-height: 24px; 
+    letter-spacing: 0.32px;
+    color: var(--bgteam);
+}
+
+.filter-btn {
+    background-color: var(--bgteam);
+    font-family: "Roboto", sans-serif;
+    color: var(--brand-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+    background-color: var(--color-change);
+    color: var(--bgcolor-all);
+}
+
+.projects-cards-name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;  
+    letter-spacing: 0.02em;
+    color: var(--text-main);
+}
+.projects-cards-platform {
+    font-size: 16px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    color: var(--text-address);
+}
