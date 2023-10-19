@@ -86,7 +86,9 @@ body {
 
 .menu-container {
     display: flex;
-    grid-gap: 329px;
+    /* grid-gap: 329px; */
+    align-items: center;
+
 }
 
 .menu-nav {
@@ -116,11 +118,12 @@ body {
 
 .contact {
     font-style: normal;
+    margin-left: auto;
 }
 
 .contact-info {
     display: flex;
-    padding-top: 24px;
+    /* padding-top: 24px; */
     grid-gap: 40px;
 }
 
@@ -144,7 +147,6 @@ body {
 .black-title {
     max-width: 496px;
     margin: 0 auto;
-    padding-bottom: 48px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 1.12px;
@@ -155,6 +157,7 @@ body {
 .black-btn {
     display: block;
     margin: 0 auto;
+    margin-top: 48px;
     min-width: 169px;
     height: 56px;
     border: none;
