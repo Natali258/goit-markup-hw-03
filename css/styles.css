@@ -25,7 +25,7 @@ img {
     height: auto;
 }
 
-header {
+.menu-header {
     border-bottom: 1px solid var(--bgimg);
 }
 
@@ -61,6 +61,7 @@ body {
 .logo {
     display: inline-block;
     padding: 25.5px 0 25.5px 0;
+    margin-right: 76px;
     color: var(--IRIS, #4D5AE5);
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -88,15 +89,19 @@ body {
     grid-gap: 329px;
 }
 
+.menu-nav {
+    display: flex;
+    align-items: center;
+}
+
 .menu {
-    display: inline-flex;
-    flex-direction: row;
-    padding-left: 76px;
+    display: flex;
     grid-gap: 40px;
 }
 
 
 .menu-page {
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -114,7 +119,7 @@ body {
 }
 
 .contact-info {
-    display: inline-flex;
+    display: flex;
     padding-top: 24px;
     grid-gap: 40px;
 }
@@ -134,12 +139,11 @@ body {
 
 .black {
     background-color: var(--text-main);
-    padding-bottom: 188px;
+    padding: 188px 0 188px;
 }
 .black-title {
-    width: 496px;
+    max-width: 496px;
     margin: 0 auto;
-    padding-top: 188px;
     padding-bottom: 48px;
     font-size: 56px;
     line-height: 1.07;
@@ -151,7 +155,9 @@ body {
 .black-btn {
     display: block;
     margin: 0 auto;
-    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     cursor: pointer;
     background-color: var(--brand-color);
     border-radius: 4px;
@@ -173,7 +179,7 @@ body {
     text-align: center;
 } */
 .presentation {
-    padding: 120px;
+    padding: 120px 0;
 }
 
 .presentation-cards {
@@ -181,8 +187,12 @@ body {
     gap: 24px;
     align-items: flex-start;
 }
+.presentation-cards-li {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
 
 .presentation-subtitle {
+    margin-bottom: 8px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -203,10 +213,11 @@ body {
 .working-cards {
     display: flex;
     gap: 24px;
-    margin-top: 72px;
+    /* margin-top: 72px; */
 }
 
 .working-title {
+    margin-bottom: 72px;
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
@@ -214,12 +225,16 @@ body {
     text-transform: capitalize;
     color: var(--text-main);
 }
+.working-cards-li {
+    flex-basis: calc((100% - 3 * 16px) / 3);
+}
 
 .team {
-    padding: 120px;
+    padding: 120px 0;
     background-color: var(--bgteam);
 }
 .team-title {
+    margin-bottom: 72px;
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
@@ -231,14 +246,18 @@ body {
 .team-cards {
     display: flex;
     gap: 24px;
-    margin-top: 72px;
 }
 
 .team-cards-company {
+    border-radius: 0px 0px 4px 4px;
     background-color: var(--bgcolor-all);
 }
+.team-cards-company-text {
+    padding: 32px 0;
+}
+
 .team-name {
-    margin-top: 32px;
+    margin-bottom: 8px;
     text-align: center;
     font-size: 20px;
     font-weight: 500;
@@ -247,7 +266,6 @@ body {
     color: var(--text-main);
 }
 .team-text {
-    margin-bottom: 32px;
     text-align: center;
     font-size: 16px;
     line-height: 24px;
@@ -261,7 +279,7 @@ body {
     padding-bottom: 100px;
 }
 .ftr-logo {
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
     color: var(--IRIS, #4D5AE5);
     font-family: "Raleway", sans-serif;
@@ -294,6 +312,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-bottom: 72px;
 }
 
 .filter-btn-group {
@@ -314,6 +333,7 @@ body {
 .filter-btn-group:focus {
     background-color: var(--color-change);
     color: var(--bgcolor-all);
+    border: 1px solid transparent;
 }
 
 .filter-projects {
@@ -321,7 +341,10 @@ body {
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
-    margin-top: 72px;
+}
+
+.filter-projects-li {
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 .filter-projects-cards-text {
@@ -331,6 +354,7 @@ body {
 }
 
 .filter-projects-cards-text-name {
+    margin-bottom: 8px;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;  
@@ -338,7 +362,6 @@ body {
     color: var(--text-main);
 }
 .filter-projects-cards-text-platform {
-    margin-top: 5px;
     font-size: 16px;
     line-height: 1.5; 
     letter-spacing: 0.02em;
